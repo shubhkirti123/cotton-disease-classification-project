@@ -1,6 +1,6 @@
 # Cotton Plant Disease Classification Web Application
 
-### Problem Statement
+## Problem Statement
 Diseases found in Agricultural crops are a major threat that causes production and economic losses as well as
 reduction in both quality and quantity of agricultural products. In India, 70% of the population depends on
 agriculture which contributes about 17% of the total GDP of our country. Cotton is a very important cash crop
@@ -15,3 +15,4 @@ texture, and other characteristics.
 The aim is to develop algorithms and techniques based on images of leaves or other plant features that can automatically detect
 and classify agricultural plant diseases. This can help farmers to assist and manage the disease.
 
+## Dataset
