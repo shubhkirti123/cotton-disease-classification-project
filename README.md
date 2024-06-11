@@ -19,13 +19,24 @@ and classify agricultural plant diseases. This can help farmers to assist and ma
 The dataset is downloaded from [Kaggle](https://www.kaggle.com/janmejaybhoi/cotton-disease-dataset). and total size is 152 MB. The dataset contains 3 folders with 1951 train images, 106 test images and 253 validation images. Each folder is divided into four classes: diseased cotton plant (Fusarium Wilt), diseased cotton leaf (Leaf Curl Disease), fresh cotton plant (Healthy Plant) and fresh cotton leaf (Healthy Leaf). Each image has a size of 694x694 pixels in JPG format.
 Here are the sample images of the dataset...  
 
-<img src="" width=50% height=50%>
+<img src="https://github.com/shubhkirti123/cotton-disease-classification-project/blob/main/assets/SampleImagesfromDataset.png?raw=true" width=50% height=50%>
+
+## VGG16 Model
+The VGG-16 architecture is a deep convolutional neural network (CNN) designed for image classification tasks. VGG-16 is characterized by its simplicity and uniform architecture, making it easy to understand and implement.
+
+The VGG-16 configuration typically consists of 16 layers, including 13 convolutional layers and 3 fully connected layers. These layers are organized into blocks, with each block containing multiple convolutional layers followed by a max-pooling layer for downsampling.
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20200219152207/new41.jpg">
+
+This model achieves 92.7% top-5 test accuracy on the ImageNet dataset which contains 14 million images belonging to 1000 classes. 
 
 ## Training Accuracy and Loss
-<img src="">
+<img src="https://github.com/shubhkirti123/cotton-disease-classification-project/blob/main/assets/model_plot.png?raw=true">
 
 ## Confusion Matrix
-<img src="" width=50% height=50%>
+<img src="https://github.com/shubhkirti123/cotton-disease-classification-project/blob/main/assets/ConfusionMatrix.png?raw=true" width=50% height=50%>
+
+## Project Flow
+<img src="https://github.com/shubhkirti123/cotton-disease-classification-project/blob/main/assets/FlowDiagramofTheSystem.png?raw=true">
 
 ## Tech Stack Used
 1. Python 
@@ -77,6 +88,22 @@ conda activate cotton
 ### Step 3 - Install the requirements
 ```bash
 pip install -r requirements.txt
+```
+
+## Docker cmds
+To build docker image, run:
+```
+docker build -t cotton .
+```
+
+Run docker image, using:
+```
+docker run --name cotton-app cotton
+``` 
+
+Stop docker, using:
+```
+docker stop cotton-app
 ```
 
 ## AWS-CICD-Deployment-with-Github-Actions
